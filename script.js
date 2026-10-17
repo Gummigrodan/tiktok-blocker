@@ -18,7 +18,7 @@ if (!SpeechRecognition) {
             try {
                 recognition.start();
                 // 3. Tog bort statusText eftersom det elementet inte finns i din HTML just nu
-                console.log("Lyssnar... Säg till exempel 'öppna tiktok'");
+                console.log("Lyssnar... Säg till exempel 'och då sa jag till den lilla grabben, ta inte min öl'");
             } catch (err) {
                 console.log("Röstigenkänningen är redan igång.");
             }
@@ -33,7 +33,7 @@ if (!SpeechRecognition) {
         console.log("Användaren sa: " + mening);
 
         // Kollar om meningen innehåller ditt lösenord
-        if (mening.includes("öppna tiktok")) {
+        if (mening.includes("och då sa jag till den lilla grabben, ta inte min öl")) {
             console.log("Rätt lösenord! Öppnar TikTok...");
             window.location.href = "snssdk1233://"; 
             
