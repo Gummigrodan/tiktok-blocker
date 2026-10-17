@@ -36,11 +36,6 @@ if (!SpeechRecognition) {
         if (mening.includes("och då sa jag till den lilla grabben, ta inte min öl")) {
             console.log("Rätt lösenord! Öppnar TikTok...");
             window.location.href = "snssdk1233://"; 
-            
-            // Tips: Lägg till en reservlänk om appen inte öppnas
-            setTimeout(() => {
-                window.location.href = "https://tiktok.com";
-            }, 2500);
         }
     };
 
